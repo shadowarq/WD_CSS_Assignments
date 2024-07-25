@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: rgb(0, 0, 0);
+      }
+      .main {
+        height: auto;
+        width: auto;
+        display: flex;
+      }
+      .grid {
+        height: 1250px;
+        width: 1600px;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        gap: 20px;
+      }
+      .image-1 {
+        grid-column: 1 / span 4;
+        grid-row: 1;
+        background: url(img1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .image-2 {
+        grid-column: 5 / span 2;
+        background: url(img2.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      .image-3 {
+        grid-column: 1;
+        background: url(img3.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      .image-4 {
+        grid-column: 2 / span 4;
+        background: url(img4.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      .image-5 {
+        grid-column: 6;
+        background: url(img5.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      .image-6 {
+        grid-column: 1 / span 3;
+        background: url(img6.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      .image-7 {
+        grid-column: 4 / span 3;
+        background: url(img7.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      .image-8 {
+        grid-column: 1 / span 2;
+        background: url(img8.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      .image-9 {
+        grid-column: 3 / span 2;
+        background: url(img9.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      .image-0 {
+        grid-column: 5 / span 2;
+        background: url(img0.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      .nav {
+        height: 300px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        text-align: right;
+        /* padding-right: 50px; */
+      }
+      .h3,
+      h5 {
+        padding: 10px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        text-align: right;
+      }
+      h5 {
+        margin-right: 10px;
+      }
+      h3 {
+        color: white;
+        padding: 20px;
+        padding-bottom: 30px;
+      }
+      h5:hover {
+        color: #ff8000;
+      }
+      .logos {
+        display: flex;
+        justify-content: end;
+        margin-right: 20px;
+        align-items: center;
+        padding-top: 27px;
+        gap: 20px;
+      }
+      @media only screen and (max-width: 600px) {
+        .main {
+          height: auto;
+          width: auto;
+          display: flex;
+          flex-direction: column;
+        }
+        .grid {
+          height: 1250px;
+          width: 1600px;
+          display: grid;
+          grid-template-columns: auto auto auto auto auto auto;
+          gap: 20px;
+          flex-direction: column;
+        }
+        .nav {
+          height: 300px;
+          width: 300px;
+          display: flex;
+          flex-direction: column;
+          justify-content: end;
+          text-align: right;
+          flex-direction: column;
+          /* padding-right: 50px; */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="grid">
+        <div class="image-1"></div>
+        <div class="image-2"></div>
+        <div class="image-3"></div>
+        <div class="image-4"></div>
+        <div class="image-5"></div>
+        <div class="image-6"></div>
+        <div class="image-7"></div>
+        <div class="image-8"></div>
+        <div class="image-9"></div>
+        <div class="image-0"></div>
+      </div>
+      <div class="nav">
+        <div>
+          <h3>SHUTTER</h3>
+        </div>
+        <div>
+          <h5>HOME</h5>
+        </div>
+        <div>
+          <h5>PHOTOS</h5>
+        </div>
+        <div>
+          <h5>BIO</h5>
+        </div>
+        <div>
+          <h5>BLOG</h5>
+        </div>
+        <div>
+          <h5>CONTACT</h5>
+        </div>
+        <div class="logos">
+          <div class="logo">
+            <i class="fa-brands fa-facebook" style="color: #ffffff"></i>
+          </div>
+          <div class="logo">
+            <i class="fa-brands fa-twitter" style="color: #ffffff"></i>
+          </div>
+          <div class="logo">
+            <i class="fa-brands fa-instagram" style="color: #ffffff"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

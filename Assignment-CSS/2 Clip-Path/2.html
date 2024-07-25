@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Sky</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      #clip-path {
+        height: auto;
+        width: auto;
+        /* border: 2px solid black; */
+      }
+
+      .main {
+        height: 850px;
+        width: auto;
+        clip-path: polygon(50% 0%, 100% 0, 100% 68%, 49% 84%, 0 68%, 0 0);
+        background-image: url(2img.jpg);
+        background-size: cover;
+      }
+
+      .nav {
+        height: auto;
+        width: auto;
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+      }
+
+      .logo {
+        display: flex;
+      }
+
+      ul {
+        display: flex;
+        gap: 80px;
+        color: white;
+      }
+
+      li {
+        list-style-type: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      a:hover {
+        color: #ff8000;
+      }
+
+      .log1 {
+        height: 50px;
+        width: 30px;
+        border: 3px solid white;
+        font-size: 40px;
+        background-color: white;
+      }
+
+      .log2 {
+        height: 50px;
+        width: 60px;
+        border: 3px solid white;
+        color: white;
+        font-size: 40px;
+      }
+
+      .text {
+        padding: 100px;
+      }
+
+      .text1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .text1 h3 {
+        color: white;
+      }
+
+      .text2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+      }
+
+      .text2 h1 {
+        color: white;
+        font-size: 80px;
+      }
+
+      .text3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+      }
+
+      .text3 p {
+        color: white;
+        text-align: center;
+      }
+
+      .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+      }
+
+      .btn1 {
+        height: 40px;
+        width: 180px;
+        background-color: orangered;
+        color: white;
+      }
+
+      .btn2 {
+        height: 40px;
+        width: 180px;
+        background-color: transparent;
+      }
+
+      .main1 {
+        height: auto;
+        width: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+      }
+
+      .main1 > div {
+        height: 250px;
+        width: 280px;
+      }
+
+      .square1 {
+        height: 50px;
+        width: 50px;
+        border: 2px solid black;
+        transform: rotate(45deg);
+        margin-left: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .square1 > i {
+        transform: rotate(135deg);
+      }
+
+      .square2 {
+        height: 50px;
+        width: 50px;
+        border: 2px solid black;
+        margin-left: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .square3 {
+        height: 50px;
+        width: 50px;
+        border: 2px solid black;
+        margin-left: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .square4 {
+        height: 50px;
+        width: 50px;
+        border: 2px solid black;
+        margin-left: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h3 {
+        padding: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="clip-path">
+      <div class="main">
+        <div class="nav">
+          <div class="logo">
+            <div class="log1">L</div>
+            <div class="log2">ogo</div>
+          </div>
+          <div class="link">
+            <ul>
+              <li><a href="">HOME</a></li>
+              <li><a href="">ABOUT US</a></li>
+              <li><a href="">PORTFOLIO</a></li>
+              <li><a href="">PRICING</a></li>
+              <li><a href="">TEAM</a></li>
+              <li><a href="">BLOG</a></li>
+              <li><a href="">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="text">
+          <div class="text1">
+            <h3>Our Clients Are Our First Priority</h3>
+          </div>
+          <div class="text2">
+            <h1>WELCOME TO SKY</h1>
+          </div>
+          <div class="text3">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              ipsa dolorum,<br />
+              facere, quasi voluptatum amet enim non deserunt, deleniti vero
+              itaque<br />
+              Temporibus voluptatem reiciend voluptas obcaecati animi.
+            </p>
+          </div>
+          <div class="btn">
+            <button class="btn1">GET STARTED NOW</button>
+            <button class="btn2">LEARN MORE</button>
+          </div>
+        </div>
+      </div>
+      <div class="main1">
+        <div class="sub1">
+          <div class="square1">
+            <i class="fa-solid fa-infinity"></i>
+          </div>
+          <h3>SLEEK DESIGN</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Necessitatibus dolores lorem ispum fugit.
+          </p>
+        </div>
+        <div class="sub2">
+          <div class="square2">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <h3>CLEAN CODE</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Necessitatibus dolores lorem ispum fugit.
+          </p>
+        </div>
+        <div class="sub3">
+          <div class="square3">
+            <i class="fa-solid fa-lightbulb"></i>
+          </div>
+          <h3>CREATIVE IDEAS</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Necessitatibus dolores lorem ispum fugit.
+          </p>
+        </div>
+        <div class="sub4">
+          <div class="square4">
+            <i class="fa-solid fa-message"></i>
+          </div>
+          <h3>FREE SUPPORT</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Necessitatibus dolores lorem ispum fugit.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

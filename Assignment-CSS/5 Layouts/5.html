@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .main {
+        height: auto;
+        width: auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        gap: 120px 60px;
+      }
+      .main1 {
+        height: 150px;
+        width: 350px;
+        background-color: dimgrey;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+      .sub1 {
+        height: 100px;
+        width: 350px;
+        border: 2px solid antiquewhite;
+        position: absolute;
+        margin-top: 250px;
+        padding: 10px;
+        color: black;
+      }
+      input {
+        width: 50px;
+      }
+      .sub1 > div {
+        margin-top: 10px;
+      }
+      @media only screen and (max-width: 600px) {
+        .main {
+          height: auto;
+          width: auto;
+          display: grid;
+          grid-template-columns: auto auto auto;
+          justify-content: center;
+          gap: 120px 60px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        .main1 {
+          height: 150px;
+          width: 350px;
+          background-color: dimgrey;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main1">
+        Thumbnail
+        <div class="sub1">
+          This is a wider card with supporting text below as a natural lead in
+          to additional content.This content is a little bit longer.
+          <div>
+            <input type="button" value="View" /><input
+              type="button"
+              value="Edit"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="main1">
+        Thumbnail
+        <div class="sub1">
+          This is a wider card with supporting text below as a natural lead in
+          to additional content.This content is a little bit longer.
+          <div>
+            <input type="button" value="View" /><input
+              type="button"
+              value="Edit"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="main1">
+        Thumbnail
+        <div class="sub1">
+          This is a wider card with supporting text below as a natural lead in
+          to additional content.This content is a little bit longer.
+          <div>
+            <input type="button" value="View" /><input
+              type="button"
+              value="Edit"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="main1">
+        Thumbnail
+        <div class="sub1">
+          This is a wider card with supporting text below as a natural lead in
+          to additional content.This content is a little bit longer.
+          <div>
+            <input type="button" value="View" /><input
+              type="button"
+              value="Edit"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="main1">
+        Thumbnail
+        <div class="sub1">
+          This is a wider card with supporting text below as a natural lead in
+          to additional content.This content is a little bit longer.
+          <div>
+            <input type="button" value="View" /><input
+              type="button"
+              value="Edit"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="main1">
+        Thumbnail
+        <div class="sub1">
+          This is a wider card with supporting text below as a natural lead in
+          to additional content.This content is a little bit longer.
+          <div>
+            <input type="button" value="View" /><input
+              type="button"
+              value="Edit"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

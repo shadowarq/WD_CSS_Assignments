@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loader</title>
+    <style>
+      body {
+        background-color: rgb(255, 162, 0);
+      }
+      .main {
+        height: 250px;
+        width: 250px;
+        display: flex;
+        margin-top: 375px;
+        margin-left: 750px;
+        border: 30px solid rgb(255, 251, 10);
+        border-radius: 50%;
+        border-top: hidden;
+        border-left: hidden;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: 1s;
+        animation-name: loader;
+      }
+      @keyframes loader {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main"></div>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            height: auto;
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+        }
+        .main > div{
+            background-color: aqua;
+            border: 2px solid black;
+            padding: 10px;
+        }
+        .box1{
+            height: 250px;
+            width: 350px;
+        }
+        .box2{
+            height: 250px;
+            width: 350px;
+        }
+        .box3{
+            height: 250px;
+            width: 500px;
+        }
+        .f1{
+            font-size: 30px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .sub{
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              gap:20px ;
+        }
+        .sub > div{
+               height: 20px;
+               width: 65px;
+               background-color: white;
+               display: flex;
+               justify-content: center;
+               
+               
+        } 
+        .sub-1{
+            height: 20px;
+            width: auto;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+        }
+        @media only screen and (max-width: 600px) {
+            .main > div{
+            background-color: aqua;
+            border: 2px solid black;
+            padding: 10px;
+            flex-direction: column;
+        }
+        .box1{
+            height: 250px;
+            width: 350px;
+            flex-direction: column;
+        }
+        .box2{
+            height: 250px;
+            width: 350px;
+            flex-direction: column;
+        }
+        .box3{
+            height: 250px;
+            width: 500px;
+            flex-direction: column;
+        }
+        .f1{
+            font-size: 30px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            flex-direction: column;
+        }
+        .sub{
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              gap:20px ;
+              flex-direction: column;
+        }
+            .sub-1{
+            height: 20px;
+            width: auto;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box1">
+            <div class="f1">First article</div><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor necessitatibus veritatis nemo illo nulla et voluptas sequi? Nam temporibus voluptate corporis architecto earum excepturi. Quia amet ipsum libero quis aliquid!</p>
+        </div>
+        <div class="box2">
+            <div class="f1">Second article</div><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor necessitatibus veritatis nemo illo nulla et voluptas sequi? Nam temporibus voluptate corporis architecto earum excepturi. Quia amet ipsum libero quis aliquid!</p> 
+        </div>
+        <div class="box3">
+            <div class="sub">
+                <div class="sub1">Smile</div>
+                <div class="sub2">Laugh</div>
+                <div class="sub3">Wink</div>
+                <div class="sub4">Shrug</div>
+            </div><br>       
+            <div class="sub-1">
+                <div class="sub5">Blush</div>
+            </div><br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores sint laborum sapiente debitis animi? Assumenda, enim, asperiores porro nostrum quis ullam excepturi quasi praesentiumrem voluptates quis consequatur odit ea excepturi nihil quaerat vero! Impedit.</p><br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab reiciendis consequatur nihil tempora culpa iste! Aut facilis fuga, rem voluptates quis consequatur odit ea excepturi nihil quaerat vero! Impedit.</p>
+         </div>
+        </div>
+    </div>
+</body>
+</html>
